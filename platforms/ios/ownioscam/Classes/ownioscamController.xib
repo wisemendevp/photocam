@@ -7,7 +7,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ownioscamController">
             <connections>
+                <outlet property="Autoprop" destination="cvC-7e-Onb" id="g5p-dU-UdR"/>
                 <outlet property="ImageView" destination="OCF-PJ-knf" id="aEb-KZ-shV"/>
+                <outlet property="Toolbaar" destination="LtJ-V1-dO5" id="6B4-fu-1Qb"/>
+                <outlet property="flashprop" destination="WqH-K8-KSk" id="X63-rp-y26"/>
+                <outlet property="offprop" destination="xeo-UM-v9h" id="bQA-0d-DXs"/>
+                <outlet property="onprop" destination="U0S-Z9-CNT" id="Fpy-sb-v3f"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -67,27 +72,96 @@
                             </view>
                         </barButtonItem>
                     </items>
-                    <color key="barTintColor" red="0.035294119268655777" green="0.074509806931018829" blue="0.086274512112140656" alpha="1" colorSpace="deviceRGB"/>
+                    <color key="barTintColor" cyan="0.9625098234728765" magenta="0.61940484297902965" yellow="0.13399978060471385" black="0.17526726973684212" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                </toolbar>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LtJ-V1-dO5">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                    <items>
+                        <barButtonItem image="Flash.png" id="WqH-K8-KSk">
+                            <connections>
+                                <action selector="flashhit:" destination="-1" id="JD4-YS-SRD"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="Auto" id="cvC-7e-Onb">
+                            <connections>
+                                <action selector="Autohit:" destination="-1" id="IAK-HH-zfl"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="On" id="U0S-Z9-CNT">
+                            <connections>
+                                <action selector="onhit:" destination="-1" id="nqJ-Ji-J6s"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="Off" id="xeo-UM-v9h">
+                            <connections>
+                                <action selector="offhitt:" destination="-1" id="Jf6-Mx-hbr"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                    <color key="tintColor" red="0.9450981021" green="0.96470594409999999" blue="0.98431378599999997" alpha="1" colorSpace="deviceRGB"/>
+                    <color key="barTintColor" cyan="0.9625098234728765" magenta="0.61940484297902965" yellow="0.13399978060471385" black="0.17526726973684212" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                 </toolbar>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XBV-Hh-95m">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="535"/>
+                    <rect key="frame" x="0.0" y="44" width="600" height="491"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="XBV-Hh-95m" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="26k-uX-eCI"/>
+                <constraint firstAttribute="trailing" secondItem="QGb-zx-UAK" secondAttribute="trailing" id="3iP-T5-wmG"/>
+                <constraint firstItem="XBV-Hh-95m" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="7tZ-o4-ESb"/>
+                <constraint firstAttribute="bottom" secondItem="QGb-zx-UAK" secondAttribute="bottom" id="8Es-Dq-fZB"/>
+                <constraint firstItem="XBV-Hh-95m" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8Ji-z4-DBe"/>
                 <constraint firstAttribute="bottom" secondItem="QGb-zx-UAK" secondAttribute="bottom" id="CLc-yy-w3n"/>
                 <constraint firstAttribute="trailing" secondItem="QGb-zx-UAK" secondAttribute="trailing" id="D5O-PZ-y8K"/>
-                <constraint firstItem="XBV-Hh-95m" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="IRD-6d-MQY"/>
+                <constraint firstAttribute="trailing" secondItem="XBV-Hh-95m" secondAttribute="trailing" id="Dcy-ep-UtJ"/>
+                <constraint firstItem="QGb-zx-UAK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="I7o-OY-azO"/>
+                <constraint firstItem="XBV-Hh-95m" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="IRD-6d-MQY"/>
                 <constraint firstAttribute="trailing" secondItem="XBV-Hh-95m" secondAttribute="trailing" id="MBb-bC-vqY"/>
+                <constraint firstItem="LtJ-V1-dO5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MBm-mm-Z0O"/>
+                <constraint firstItem="QGb-zx-UAK" firstAttribute="top" secondItem="XBV-Hh-95m" secondAttribute="bottom" id="Nov-JS-qbD"/>
+                <constraint firstAttribute="bottom" secondItem="QGb-zx-UAK" secondAttribute="bottom" id="V8L-b7-RSc"/>
+                <constraint firstItem="QGb-zx-UAK" firstAttribute="top" secondItem="XBV-Hh-95m" secondAttribute="bottom" id="YKF-zr-xwL"/>
+                <constraint firstItem="QGb-zx-UAK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YUq-g2-2kP"/>
+                <constraint firstItem="QGb-zx-UAK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="ZfF-LL-hyf"/>
+                <constraint firstItem="LtJ-V1-dO5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="c8S-gc-Z8t"/>
+                <constraint firstItem="QGb-zx-UAK" firstAttribute="top" secondItem="XBV-Hh-95m" secondAttribute="bottom" id="cXJ-u9-YAa"/>
+                <constraint firstAttribute="trailing" secondItem="LtJ-V1-dO5" secondAttribute="trailing" id="dY7-sY-0k0"/>
+                <constraint firstAttribute="trailing" secondItem="XBV-Hh-95m" secondAttribute="trailing" id="ge3-wX-Yt4"/>
                 <constraint firstAttribute="bottom" secondItem="QGb-zx-UAK" secondAttribute="bottom" id="hRP-2Y-2mt"/>
                 <constraint firstItem="QGb-zx-UAK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="huz-AN-H8t"/>
+                <constraint firstAttribute="bottom" secondItem="QGb-zx-UAK" secondAttribute="bottom" id="ldF-eG-25o"/>
+                <constraint firstAttribute="trailing" secondItem="XBV-Hh-95m" secondAttribute="trailing" id="mNy-5A-EXW"/>
                 <constraint firstItem="QGb-zx-UAK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nzN-Tu-afi"/>
+                <constraint firstItem="QGb-zx-UAK" firstAttribute="trailing" secondItem="XBV-Hh-95m" secondAttribute="trailing" id="pKw-x4-WHJ"/>
                 <constraint firstAttribute="trailing" secondItem="QGb-zx-UAK" secondAttribute="trailing" id="qjJ-iZ-Ln2"/>
+                <constraint firstAttribute="trailing" secondItem="XBV-Hh-95m" secondAttribute="trailing" constant="16" id="rWB-tr-Zjt"/>
+                <constraint firstItem="XBV-Hh-95m" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="teM-fo-KIM"/>
+                <constraint firstAttribute="trailing" secondItem="QGb-zx-UAK" secondAttribute="trailing" constant="16" id="vWJ-XT-kw3"/>
+                <constraint firstAttribute="trailing" secondItem="QGb-zx-UAK" secondAttribute="trailing" id="xxl-F0-heP"/>
+                <constraint firstItem="XBV-Hh-95m" firstAttribute="top" secondItem="LtJ-V1-dO5" secondAttribute="bottom" id="yJZ-IG-TKY"/>
                 <constraint firstItem="QGb-zx-UAK" firstAttribute="top" secondItem="XBV-Hh-95m" secondAttribute="bottom" id="zUy-EB-aXs"/>
             </constraints>
-            <point key="canvasLocation" x="339" y="506"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="7tZ-o4-ESb"/>
+                    <exclude reference="MBb-bC-vqY"/>
+                    <exclude reference="mNy-5A-EXW"/>
+                    <exclude reference="rWB-tr-Zjt"/>
+                    <exclude reference="teM-fo-KIM"/>
+                    <exclude reference="3iP-T5-wmG"/>
+                    <exclude reference="D5O-PZ-y8K"/>
+                    <exclude reference="ZfF-LL-hyf"/>
+                    <exclude reference="huz-AN-H8t"/>
+                    <exclude reference="qjJ-iZ-Ln2"/>
+                    <exclude reference="vWJ-XT-kw3"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="436" y="496"/>
         </view>
     </objects>
+    <resources>
+        <image name="Flash.png" width="24" height="40"/>
+    </resources>
 </document>
