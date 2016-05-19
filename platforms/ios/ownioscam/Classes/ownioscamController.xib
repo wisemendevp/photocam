@@ -121,7 +121,7 @@
                                 <action selector="offhitt:" destination="-1" id="Jf6-Mx-hbr"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem image="Flash.png" id="coa-be-WZe"/>
+                        <barButtonItem image="icon-96-xhdpi.png" id="coa-be-WZe"/>
                     </items>
                     <color key="tintColor" red="0.9450981021" green="0.96470594409999999" blue="0.98431378599999997" alpha="1" colorSpace="deviceRGB"/>
                     <color key="barTintColor" cyan="0.9625098234728765" magenta="0.61940484297902965" yellow="0.13399978060471385" black="0.17526726973684212" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
@@ -187,6 +187,6 @@
         </view>
     </objects>
     <resources>
-        <image name="Flash.png" width="24" height="40"/>
+        <image name="icon-96-xhdpi.png" width="96" height="96"/>
     </resources>
 </document>
