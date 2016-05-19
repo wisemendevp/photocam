@@ -121,7 +121,42 @@
                                 <action selector="offhitt:" destination="-1" id="Jf6-Mx-hbr"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem image="icon-96-xhdpi.png" id="coa-be-WZe"/>
+                        <barButtonItem style="plain" id="oep-ZU-v8g">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qxt-Ii-GzA">
+                                <rect key="frame" x="170" y="7" width="24" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Default-Portrait.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem style="plain" id="x9D-Ok-jH8">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="FKv-JQ-Fty">
+                                <rect key="frame" x="204" y="7" width="24" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Flash.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem style="plain" id="7XL-Tf-Ndh">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9kp-JK-mAf">
+                                <rect key="frame" x="238" y="7" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icon-128.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem image="Default-Portrait.png" style="plain" id="nIy-6K-WEV">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3vl-gs-s8z">
+                                <rect key="frame" x="376" y="7" width="173" height="173"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icon-173-tile.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
                     </items>
                     <color key="tintColor" red="0.9450981021" green="0.96470594409999999" blue="0.98431378599999997" alpha="1" colorSpace="deviceRGB"/>
                     <color key="barTintColor" cyan="0.9625098234728765" magenta="0.61940484297902965" yellow="0.13399978060471385" black="0.17526726973684212" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
@@ -187,6 +222,9 @@
         </view>
     </objects>
     <resources>
-        <image name="icon-96-xhdpi.png" width="96" height="96"/>
+        <image name="Default-Portrait.png" width="24" height="40"/>
+        <image name="Flash.png" width="24" height="40"/>
+        <image name="icon-128.png" width="128" height="128"/>
+        <image name="icon-173-tile.png" width="173" height="173"/>
     </resources>
 </document>
