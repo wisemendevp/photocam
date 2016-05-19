@@ -121,15 +121,7 @@
                                 <action selector="offhitt:" destination="-1" id="Jf6-Mx-hbr"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem style="plain" id="ZPT-5t-BlW">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vMR-Nr-ekc">
-                                <rect key="frame" x="170" y="7" width="24" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Default-Portrait.png">
-                                    <color key="titleColor" red="0.4274510145" green="0.96078437569999997" blue="0.18431372939999999" alpha="1" colorSpace="deviceRGB"/>
-                                </state>
-                            </button>
-                        </barButtonItem>
+                        <barButtonItem image="Flash.png" id="coa-be-WZe"/>
                     </items>
                     <color key="tintColor" red="0.9450981021" green="0.96470594409999999" blue="0.98431378599999997" alpha="1" colorSpace="deviceRGB"/>
                     <color key="barTintColor" cyan="0.9625098234728765" magenta="0.61940484297902965" yellow="0.13399978060471385" black="0.17526726973684212" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
@@ -195,6 +187,6 @@
         </view>
     </objects>
     <resources>
-        <image name="Default-Portrait.png" width="24" height="40"/>
+        <image name="Flash.png" width="24" height="40"/>
     </resources>
 </document>
