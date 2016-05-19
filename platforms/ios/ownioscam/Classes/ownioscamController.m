@@ -38,7 +38,7 @@
         self.flashview.image = flashimage;
         
         
-        [self.Toolbaar setItems:[[NSArray alloc]initWithObjects:flashprop,Autoprop,nil,nil, nil]];
+     //   [self.Toolbaar setItems:[[NSArray alloc]initWithObjects:flashprop,Autoprop,nil,nil, nil]];
         
         // Set this VC's view as the overlay view for the UIImagePickerController
         self.picker.cameraOverlayView = self.view;
@@ -165,19 +165,19 @@
 
 - (IBAction)flashhit:(id)sender {
     
-    [Toolbaar setItems:[[NSArray alloc]initWithObjects:flashprop,Autoprop,onprop,offprop, nil]];
+  //  [Toolbaar setItems:[[NSArray alloc]initWithObjects:flashprop,Autoprop,onprop,offprop, nil]];
     
     
 }
 
 - (IBAction)Autohit:(id)sender {
-     [Toolbaar setItems:[[NSArray alloc]initWithObjects:flashprop,Autoprop,nil,nil, nil]];
-     self.picker.cameraFlashMode = UIImagePickerControllerCameraFlashModeAuto;
+  //   [Toolbaar setItems:[[NSArray alloc]initWithObjects:flashprop,Autoprop,nil,nil, nil]];
+ //    self.picker.cameraFlashMode = UIImagePickerControllerCameraFlashModeAuto;
 }
 
 - (IBAction)onhit:(id)sender {
-    [Toolbaar setItems:[[NSArray alloc]initWithObjects:flashprop,onprop,nil,nil, nil]];
-    self.picker.cameraFlashMode = UIImagePickerControllerCameraFlashModeOn;
+ //   [Toolbaar setItems:[[NSArray alloc]initWithObjects:flashprop,onprop,nil,nil, nil]];
+ //   self.picker.cameraFlashMode = UIImagePickerControllerCameraFlashModeOn;
 }
 
 - (IBAction)hitt:(id)sender {
@@ -185,11 +185,11 @@
 }
 
 - (IBAction)hittt:(id)sender {
-     [Toolbaar setItems:[[NSArray alloc]initWithObjects:flashprop,Autoprop,onprop,offprop, nil]];
+    // [Toolbaar setItems:[[NSArray alloc]initWithObjects:flashprop,Autoprop,onprop,offprop, nil]];
 }
 
 - (IBAction)offhitt:(id)sender {
-     [Toolbaar setItems:[[NSArray alloc]initWithObjects:flashprop,offprop,nil,nil, nil]];
-    self.picker.cameraFlashMode = UIImagePickerControllerCameraFlashModeOff;
+   //  [Toolbaar setItems:[[NSArray alloc]initWithObjects:flashprop,offprop,nil,nil, nil]];
+  //  self.picker.cameraFlashMode = UIImagePickerControllerCameraFlashModeOff;
 }
 @end
