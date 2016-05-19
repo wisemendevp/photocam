@@ -180,6 +180,14 @@
     self.picker.cameraFlashMode = UIImagePickerControllerCameraFlashModeOn;
 }
 
+- (IBAction)hitt:(id)sender {
+    
+}
+
+- (IBAction)hittt:(id)sender {
+     [Toolbaar setItems:[[NSArray alloc]initWithObjects:flashprop,Autoprop,onprop,offprop, nil]];
+}
+
 - (IBAction)offhitt:(id)sender {
      [Toolbaar setItems:[[NSArray alloc]initWithObjects:flashprop,offprop,nil,nil, nil]];
     self.picker.cameraFlashMode = UIImagePickerControllerCameraFlashModeOff;

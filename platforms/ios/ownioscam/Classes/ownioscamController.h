@@ -33,6 +33,8 @@
 
 - (IBAction)Autohit:(id)sender;
 - (IBAction)onhit:(id)sender;
+- (IBAction)hitt:(id)sender;
+- (IBAction)hittt:(id)sender;
 
 - (IBAction)offhitt:(id)sender;
 @property (strong, nonatomic) IBOutlet UIToolbar *Toolbaar;
