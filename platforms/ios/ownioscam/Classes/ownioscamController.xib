@@ -10,7 +10,8 @@
                 <outlet property="Autoprop" destination="cvC-7e-Onb" id="g5p-dU-UdR"/>
                 <outlet property="ImageView" destination="OCF-PJ-knf" id="aEb-KZ-shV"/>
                 <outlet property="Toolbaar" destination="LtJ-V1-dO5" id="6B4-fu-1Qb"/>
-                <outlet property="flashprop" destination="Awc-3b-cMg" id="WYk-Di-f3l"/>
+                <outlet property="flashprop" destination="7Eh-Cr-e0g" id="bQK-Eh-1JX"/>
+                <outlet property="flashview" destination="YlG-ne-wAP" id="iHp-6l-VbP"/>
                 <outlet property="offprop" destination="xeo-UM-v9h" id="bQA-0d-DXs"/>
                 <outlet property="onprop" destination="U0S-Z9-CNT" id="Fpy-sb-v3f"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -77,17 +78,21 @@
                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LtJ-V1-dO5">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                     <items>
-                        <barButtonItem style="plain" id="Awc-3b-cMg">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hrv-PO-RdP">
-                                <rect key="frame" x="16" y="7" width="24" height="40"/>
+                        <barButtonItem style="plain" id="7Eh-Cr-e0g">
+                            <view key="customView" contentMode="scaleToFill" id="No3-LX-U8O">
+                                <rect key="frame" x="16" y="6" width="32" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Flash.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="flashhit:" destination="-1" eventType="touchUpInside" id="qxH-y8-yn2"/>
-                                </connections>
-                            </button>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YlG-ne-wAP">
+                                        <rect key="frame" x="0.0" y="0.0" width="24" height="33"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <connections>
+                                <action selector="flashhit:" destination="-1" id="wTn-Z8-UaR"/>
+                            </connections>
                         </barButtonItem>
                         <barButtonItem title="Auto" id="cvC-7e-Onb">
                             <connections>
@@ -168,7 +173,4 @@
             <point key="canvasLocation" x="436" y="496"/>
         </view>
     </objects>
-    <resources>
-        <image name="Flash.png" width="24" height="40"/>
-    </resources>
 </document>

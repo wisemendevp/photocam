@@ -17,6 +17,8 @@
 
 @property (strong, nonatomic) IBOutlet UIImageView *ImageView;
 
+@property (strong, nonatomic) IBOutlet UIImageView *flashview;
+
 // Declare some properties (to be explained soon)
 @property (strong, nonatomic) ownioscam* plugin;
 @property (strong, nonatomic) UIImagePickerController* picker;

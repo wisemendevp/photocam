@@ -8,6 +8,7 @@
 @synthesize onprop;
 @synthesize offprop;
 @synthesize Toolbaar;
+@synthesize flashview;
 // Entry point method
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -33,6 +34,10 @@
         CGRect screenFrame = [[UIScreen mainScreen] bounds];
         self.view.frame = screenFrame;
         self.picker.view.frame = screenFrame;
+        UIImage* flashimage = [UIImage imageNamed:@"Flash.png"];
+        self.flashview.image = flashimage;
+        
+        
         [self.Toolbaar setItems:[[NSArray alloc]initWithObjects:flashprop,Autoprop,nil,nil, nil]];
         
         // Set this VC's view as the overlay view for the UIImagePickerController
