@@ -10,7 +10,6 @@
                 <outlet property="Autoprop" destination="cvC-7e-Onb" id="g5p-dU-UdR"/>
                 <outlet property="ImageView" destination="OCF-PJ-knf" id="aEb-KZ-shV"/>
                 <outlet property="Toolbaar" destination="LtJ-V1-dO5" id="6B4-fu-1Qb"/>
-                <outlet property="flashprop" destination="WqH-K8-KSk" id="X63-rp-y26"/>
                 <outlet property="offprop" destination="xeo-UM-v9h" id="bQA-0d-DXs"/>
                 <outlet property="onprop" destination="U0S-Z9-CNT" id="Fpy-sb-v3f"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -77,10 +76,14 @@
                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LtJ-V1-dO5">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                     <items>
-                        <barButtonItem title="Item" image="Flash.png" id="WqH-K8-KSk">
-                            <connections>
-                                <action selector="flashhit:" destination="-1" id="JD4-YS-SRD"/>
-                            </connections>
+                        <barButtonItem style="plain" id="dwu-Ko-Zn0">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Dgc-gM-Dh7">
+                                <rect key="frame" x="16" y="5" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icon-48.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </barButtonItem>
                         <barButtonItem title="Auto" id="cvC-7e-Onb">
                             <connections>
@@ -162,6 +165,6 @@
         </view>
     </objects>
     <resources>
-        <image name="Flash.png" width="24" height="40"/>
+        <image name="icon-48.png" width="48" height="48"/>
     </resources>
 </document>
